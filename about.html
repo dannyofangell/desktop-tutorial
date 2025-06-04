@@ -2,24 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About</title>
+  <title>About - John Doe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="container">
+      <div class="logo"><a href="index.html">John Doe</a></div>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
+      <button id="toggle-theme" aria-label="Toggle theme">🌙</button>
     </nav>
   </header>
-  <main>
-    <h1>About</h1>
-    <p>This page gives information about this simple website.</p>
+  <main class="container">
+    <h1>About Me</h1>
+    <p>I'm John Doe, a developer focused on building tools and automations for Managed Service Providers. I love creating efficient solutions that help teams deliver great service.</p>
+
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Python &amp; Automation</li>
+      <li>PowerShell Scripting</li>
+      <li>Cloud Integrations</li>
+      <li>Web Development</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>I'd love to connect! Email me at <a href="mailto:johndoe@example.com">johndoe@example.com</a>.</p>
   </main>
   <footer>
-    <p>&copy; 2024 My Website</p>
+    <p>&copy; 2024 John Doe</p>
   </footer>
   <script src="script.js"></script>
 </body>

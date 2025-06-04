@@ -1,5 +1,5 @@
-# Welcome to GitHub Desktop!
+# Personal MSP Developer Site
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
+This repository contains a simple personal website for a developer who builds coding and IT solutions for Managed Service Providers. It features a short introduction, an about page with skills, and a contact section.
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+Open `index.html` in your browser to view the site.
