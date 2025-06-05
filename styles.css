@@ -161,3 +161,34 @@ footer {
 .dark-theme .about .skills li {
   color: #f0f0f0;
 }
+
+.code-block {
+  margin: 1em 0;
+}
+
+.code-block pre {
+  background: #1e1e1e;
+  color: #f8f8f2;
+  padding: 1em;
+  border-radius: 4px;
+  overflow-x: auto;
+  display: none;
+}
+
+.code-block .code-toggle {
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dark-theme .code-block pre {
+  background: #333;
+  color: #f0f0f0;
+}
+
+.dark-theme .code-block .code-toggle {
+  background-color: #005a99;
+}
