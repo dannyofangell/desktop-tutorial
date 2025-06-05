@@ -15,4 +15,17 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  document.querySelectorAll('.code-block').forEach(function(block) {
+    const button = block.querySelector('.code-toggle');
+    const pre = block.querySelector('pre');
+    if (button && pre) {
+      pre.style.display = 'none';
+      button.addEventListener('click', function() {
+        const isHidden = pre.style.display === 'none';
+        pre.style.display = isHidden ? 'block' : 'none';
+        button.setAttribute('aria-expanded', isHidden);
+      });
+    }
+  });
 });
