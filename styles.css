@@ -1,15 +1,15 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #f0f0f0;
+  background-color: #f8f9fa;
   color: #333;
 }
 
 .container {
   width: 90%;
-  max-width: 960px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 1em;
 }
@@ -58,12 +58,15 @@ nav button {
 
 .hero {
   text-align: center;
-  padding: 3em 1em;
+  padding: 4em 1em;
+  background: linear-gradient(135deg, #007acc, #00aaff);
+  color: #fff;
 }
 
 .hero .tagline {
   font-size: 1.2em;
   margin: 0.5em 0 1em;
+  opacity: 0.9;
 }
 
 .btn {
@@ -72,11 +75,44 @@ nav button {
   padding: 0.75em 1.5em;
   text-decoration: none;
   border-radius: 4px;
+  display: inline-block;
 }
 
 .skills {
   list-style: square inside;
   padding-left: 0;
+}
+
+.posts {
+  margin-top: 2em;
+}
+
+.post {
+  background: #fff;
+  padding: 1.5em;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5em;
+}
+
+.post h2 {
+  margin-top: 0;
+}
+
+.post-meta {
+  color: #777;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+}
+
+.about {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.about .skills {
+  display: inline-block;
+  text-align: left;
 }
 
 footer {
@@ -103,4 +139,17 @@ footer {
 
 .dark-theme .btn {
   background-color: #005a99;
+}
+
+.dark-theme .post {
+  background: #333;
+  color: #f0f0f0;
+}
+
+.dark-theme .post-meta {
+  color: #bbb;
+}
+
+.dark-theme .about .skills li {
+  color: #f0f0f0;
 }
