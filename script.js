@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   const toggleBtn = document.getElementById('toggle-theme');
 
-  if (localStorage.getItem('theme') === 'dark') {
+  if (localStorage.getItem('theme') !== 'light') {
     document.body.classList.add('dark-theme');
   }
 
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (document.body.classList.contains('dark-theme')) {
         localStorage.setItem('theme', 'dark');
       } else {
-        localStorage.removeItem('theme');
+        localStorage.setItem('theme', 'light');
       }
     });
   }
